@@ -1,0 +1,10 @@
+C:\CSharp\ProjetosEstudos\ProductionClientHUB\ProductionClientHUB.Exception\bin\Debug\ProductionClientHUB.Exception.dll
+C:\CSharp\ProjetosEstudos\ProductionClientHUB\ProductionClientHUB.Exception\bin\Debug\ProductionClientHUB.Exception.pdb
+C:\CSharp\ProjetosEstudos\ProductionClientHUB\ProductionClientHUB.Exception\bin\Debug\Microsoft.Analytics.Interfaces.dll
+C:\CSharp\ProjetosEstudos\ProductionClientHUB\ProductionClientHUB.Exception\bin\Debug\Microsoft.Analytics.Interfaces.Streaming.dll
+C:\CSharp\ProjetosEstudos\ProductionClientHUB\ProductionClientHUB.Exception\bin\Debug\Microsoft.Analytics.Types.dll
+C:\CSharp\ProjetosEstudos\ProductionClientHUB\ProductionClientHUB.Exception\obj\Debug\ProductionClientHUB.Exception.csproj.AssemblyReference.cache
+C:\CSharp\ProjetosEstudos\ProductionClientHUB\ProductionClientHUB.Exception\obj\Debug\ProductionClientHUB.Exception.csproj.CoreCompileInputs.cache
+C:\CSharp\ProjetosEstudos\ProductionClientHUB\ProductionClientHUB.Exception\obj\Debug\Producti.F3B931DF.Up2Date
+C:\CSharp\ProjetosEstudos\ProductionClientHUB\ProductionClientHUB.Exception\obj\Debug\ProductionClientHUB.Exception.dll
+C:\CSharp\ProjetosEstudos\ProductionClientHUB\ProductionClientHUB.Exception\obj\Debug\ProductionClientHUB.Exception.pdb
