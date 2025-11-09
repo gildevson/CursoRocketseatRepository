@@ -35,8 +35,8 @@ aplicação real, você retornaria dados ou códigos de status mais específicos
 
 Vamos ter as pastas RESPONSE E REQUESTS.
 
-Resquest: todos os dados que vamos receber em nossa API.  
-Response: Aqui vai ter todos dados que vai ter como resposta.
+Resquest: todos os dados que vamos receber em nossa API.(REQUEST É QUE API RECEBE )
+Response: Aqui vai ter todos dados que vai ter como resposta.(RESPONSE QUE API RESPONDE)
 
 ---
 
