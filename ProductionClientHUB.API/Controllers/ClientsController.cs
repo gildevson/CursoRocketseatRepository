@@ -28,15 +28,14 @@ public class ClientsController : ControllerBase
         return Ok();
     }
 
-    [HttpGet("By-id")]
+    [HttpGet]
+    [Route("{id}/gilson/{sobrenome}")]
 
-    public IActionResult GetById(Guid id)
+    public IActionResult GetById(Guid id, string sobrenome)
     {
         return Ok();
     }
 
-    [HttpGet]
-    [Route("{id}")]
 
 
     [HttpDelete]

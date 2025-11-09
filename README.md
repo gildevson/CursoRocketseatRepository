@@ -28,7 +28,18 @@ O código define vários métodos (_Action Methods_) que respondem a diferentes 
 
 #### ℹ️ Retorno Padrão
 
-Todos os métodos estão retornando **`Ok()`**. Em ASP.NET Core, `Ok()` é um `IActionResult` que resulta em uma resposta HTTP com o **código de status 200 (OK)**, indicando que a requisição foi bem-sucedida. Em uma aplicação real, você retornaria dados ou códigos de status mais específicos (e.g., 201 Created, 404 Not Found).
+Todos os métodos estão retornando **`Ok()`**. Em ASP.NET Core, `Ok()` é um `IActionResult` que resulta em uma resposta HTTP com o **código de status 200 (OK)**, indicando que a requisição foi bem-sucedida. Em uma 
+aplicação real, você retornaria dados ou códigos de status mais específicos (e.g., 201 Created, 404 Not Found).
+
+#### ℹ️  Pastas 
+
+Vamos ter as pastas RESPONSE E REQUESTS.
+
+Resquest: todos os dados que vamos receber em nossa API.  
+Response: Aqui vai ter todos dados que vai ter como resposta.
+
+---
+
 
 ---
 
