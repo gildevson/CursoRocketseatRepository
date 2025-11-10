@@ -33,14 +33,33 @@ aplicação real, você retornaria dados ou códigos de status mais específicos
 
 #### ℹ️  Pastas 
 
-Vamos ter as pastas RESPONSE e REQUESTS.
+# Estrutura de Pastas: REQUESTS e RESPONSES
 
-Request: todos os dados que vamos receber em nossa API. (REQUEST É O QUE A API RECEBE)
-
----
-
-Response: Aqui vai ter todos os dados que vai ter como resposta. (RESPONSE É O QUE A API RESPONDE)
+Vamos ter as pastas **REQUESTS** e **RESPONSES**.
 
 ---
 
-Este código é um **esqueleto básico** para construir a camada de entrada de uma aplicação RESTful, onde a `ClientsController` atua como a ponte entre as requisições HTTP e a lógica de negócios da sua aplicação..
+### 📨 Request
+Todos os dados que vamos **receber** em nossa API.  
+*(REQUEST é o que a API recebe.)*
+
+---
+
+### 📤 Response
+Aqui vai ter todos os dados que vamos **enviar como resposta**.  
+*(RESPONSE é o que a API responde.)*
+
+---
+
+### 🧩 Biblioteca de Validação
+
+Existe uma biblioteca chamada **FluentValidation**, que auxilia na **validação de requisições** — tanto nas que **recebemos** quanto nas que **enviamos** para a API.
+
+Ela garante que os dados estejam corretos antes de serem processados ou retornados pela aplicação.
+
+---
+
+### 🧱 Estrutura Base da Aplicação
+
+Este código é um **esqueleto básico** para construir a **camada de entrada** de uma aplicação **RESTful**, onde a classe `ClientsController` atua como a ponte entre as **requisições HTTP** e a **lógica de negócios** da sua aplicação.
+
