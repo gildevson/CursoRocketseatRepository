@@ -39,9 +39,5 @@ Resquest: todos os dados que vamos receber em nossa API.(REQUEST É QUE API RECE
 Response: Aqui vai ter todos dados que vai ter como resposta.(RESPONSE QUE API RESPONDE)
 ***
 
----
-
-
----
 
 Este código é um **esqueleto básico** para construir a camada de entrada de uma aplicação RESTful, onde a `ClientsController` atua como a ponte entre as requisições HTTP e a lógica de negócios da sua aplicação..
