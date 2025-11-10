@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using ProductionClientHUB.Communication.Requests;
 using ProductionClientHUB.Communication.Responses;
+using ProductionClientHUB.Communication.UseCases.Clients.Register;
 
 namespace ProductionClientHUB.API.Controllers;
 
@@ -16,7 +17,13 @@ public class ClientsController : ControllerBase
 
     public IActionResult Register([FromBody] RequestClientJson request) // vai receber os dados do corpo da requisição
     {
-        return Created();
+
+        var useCase = new RegisterClientUseCase();
+
+        var response = useCase.Execute(request);
+
+        useCase.Execute(request);   
+        return Created(string.Empty, response); // Created é o código 201 precisa ter dois parâmetros no caso do Created
     }
 
     [HttpPut]
