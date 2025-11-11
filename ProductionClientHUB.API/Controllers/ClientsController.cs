@@ -14,16 +14,33 @@ public class ClientsController : ControllerBase
    // [ProducesResponseType(typeof(ResponseClientJson), 201] é mesma coisa 
 
     [ProducesResponseType(typeof(ResponseClientJson), StatusCodes.Status201Created)] // versão recomendada
-
+    [ProducesResponseType(typeof(ResponseErrorMessagesJson), StatusCodes.Status400BadRequest)]
     public IActionResult Register([FromBody] RequestClientJson request) // vai receber os dados do corpo da requisição
     {
 
-        var useCase = new RegisterClientUseCase();
+        try { // dentro do executa que esta abaixo
+            var useCase = new RegisterClientUseCase();
 
-        var response = useCase.Execute(request);
+            var response = useCase.Execute(request);
 
-        useCase.Execute(request);   
-        return Created(string.Empty, response); // Created é o código 201 precisa ter dois parâmetros no caso do Created
+            useCase.Execute(request);
+            return Created(string.Empty, response); // Created é o código 201 precisa ter dois parâmetros no caso do Created
+
+        }
+
+        catch (Exception ex) // se não conseguir se alguma execção cai no catch Exception clasxse de exeções
+        {
+            return BadRequest(new ResponseErrorMessagesJson(ex.Message)); // BadRequest é o código 400 ele tambem puxa o ex.message como parametro
+        }
+
+        catch {
+
+            return StatusCode(StatusCodes.Status500InternalServerError, new ResponseErrorMessagesJson("Erro Desconhecido")); 
+            // 500
+            // sempre que recever uuma exessão quando não tiver tratamento colcoar erro desconhecido
+        }
+
+
     }
 
     [HttpPut]
