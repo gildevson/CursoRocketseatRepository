@@ -15,6 +15,12 @@ namespace ProductionClientHUB.Communication.UseCases.Clients.Register {
            var validator = new RegisterClientValidator();
 
             var result = validator.Validate(request);
+
+            if (result.IsValid == false) {
+                throw new ArgumentException("Erro nos dados recebidos"); //
+            }
+                //SE FOR VALIDO CONTINUA REGRA DE NEGOCIO
+
             return new ResponseClientJson();
             
         }
