@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 using ProductionClientHUB.Communication.Requests;
 using ProductionClientHUB.Communication.Responses;
 using ProductionClientHUB.Communication.UseCases.Clients.Register;
+using ProductionClientHUB.Exception.ExceptionsBase;
 
 namespace ProductionClientHUB.API.Controllers;
 
@@ -27,8 +28,8 @@ public class ClientsController : ControllerBase
             return Created(string.Empty, response); // Created é o código 201 precisa ter dois parâmetros no caso do Created
 
         }
-
-        catch (Exception ex) // se não conseguir se alguma execção cai no catch Exception clasxse de exeções
+        
+        catch (ProductClientHubException ex) // se não conseguir se alguma execção cai no catch Exception clasxse de exeções
         {
             return BadRequest(new ResponseErrorMessagesJson(ex.Message)); // BadRequest é o código 400 ele tambem puxa o ex.message como parametro
         }
