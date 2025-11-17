@@ -1,6 +1,6 @@
 ## 🛠️ Criando uma Controller em ASP.NET Core Web API
 
-Este código define uma **API Controller** chamada `ClientsController`, que é responsável por lidar com as requisições HTTP para a gestão de recursos relacionados a "Clientes" (`Clients`)..
+Este código define uma **API Controller** chamada `ClientsController`, que é responsável por lidar com as requisições HTTP para a gestão de recursos relacionados a "Clientes" (`Clients`).
 
 ### 🔑 Componentes Principais
 
